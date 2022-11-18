@@ -4,47 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <title>TINI - Opiniones</title>
 </head>
-<body class="pagina">
-    <header class="header">
-        <div class="alinearHeader">
+<body>
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top navbar-style"> 
+            <div class="container-fluid">
+            <img class ="logo" src="../assets/images/logoTini.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item ">
+                  <a class="nav-link enlace" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active enlace" href="#">Opiniones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link enlace" href="./discografia.html">Discografia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link enlace" href="./tour.html">Tour</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link enlace" href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+    </nav> 
+    <main>
+            <div class="container">
+                <div class="row g-3">
+                <h1 class="opinionesTini">OPINIONES</h1></div>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="../assets/images/AlejandroSanz.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h2 class="card-title">Alejandro Sanz</h2>
+                                <p class="card-text">"Una mujer talentosa, buena persona, trabajadora, inteligente, guapísima"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">  
+                            <img src="../assets/images/MariaBecerra.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h2 class="card-title">Maria Becerra</h2>
+                                <p class="card-text">"Tini es la mejor persona que he conocido en la industria, buena, generosa, es talentosísima..."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="../assets/images/LolaIndigo.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h2 class="card-title">Lola Indigo</h2>
+                                <p class="card-text">"(...) es lo normal que sea la reina de Argentina. Es buena amiga, es buena persona, es generosa, es talentosa..."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
 
-            <img class ="logo" src="../images/logoTini.png" alt="">
-            <nav class="navbar">
-                <ul>
-                    <li class="navegacion"><a class="link" href="../index.html">Home</a></li>
-                    <li class="navegacion"><a class="link" href="#">Opiniones</a></li>
-                    <li class="navegacion"><a class="link" href="discografia.html">Discografia</a></li>
-                    <li class="navegacion"><a class="link" href="tour.html">Tour</a></li>
-                    <li class="navegacion"><a class="link" href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main class ="banner2">
-        <section>
-            <h1 class="opinionesTini">OPINIONES</h1>
-            <div class = "contenedorCards">
-                <div class="card">
-                    <img src="../images/AlejandroSanz.jpg" alt="AlejandroSanz">
-                    <h2>Alejandro Sanz</h2>
-                    <p class="parrOpinionesCard">"Una mujer talentosa, buena persona, trabajadora, inteligente, guapísima"</p>
-                </div>
-                <div class="card">
-                    <img src="../images/MariaBecerra.jpg" alt="MariaBecerra">
-                    <h2>Maria Becerra</h2>
-                    <p class="parrOpinionesCard">"Tini es la mejor persona que he conocido en la industria, buena, generosa, es talentosísima, canta, baila, compone"</p>
-                </div>
-                <div class="card">
-                    <img src="../images/LolaIndigo.jpg" alt="LolaIndigo">
-                    <h2>Lola Indigo</h2>
-                    <p class="parrOpinionesCard">"(...) es lo normal que sea la reina de Argentina. Es buena amiga, es buena persona, es generosa, es talentosa, siempre quiere ir a más, se exige un montón, es detallista..."</p>
+                <h3 class="opinion">Queres que agregemos la opinion de algun famoso? No dudes en <a href="./contacto.html">hacernoslo saber</a></h3>
                 </div>
             </div>
-        </section>
-        <h4 class="opinion">Queres que agregemos la opinion de algun famoso? No dudes en <a href="./contacto.html">hacernoslo saber</a></h4>
 
     </main>
     <footer class="footer">
@@ -53,28 +81,29 @@
             <div class="cabecera">
                 <ul class="redes">
                     <li class="navegacion">
-                        <a class="link" href="https://www.instagram.com/tinistoessel/?hl=es-la">
-                            <img class="socialMedia" src="../images/instagram.png" alt="Instagram">
+                        <a class="enlace" href="https://www.instagram.com/tinistoessel/?hl=es-la">
+                            <img class="socialMedia" src="../assets/images/instagram.png" alt="Instagram">
                         </a>
                     </li>
                     <li class="navegacion">
-                        <a class="link" href="https://www.youtube.com/channel/UCJusEPcWIH9EyYSCqGP-1ew">
-                            <img class="socialMedia" src="../images/youtube.png" alt="Youtube">
+                        <a class="enlace" href="https://www.youtube.com/channel/UCJusEPcWIH9EyYSCqGP-1ew">
+                            <img class="socialMedia" src="../assets/images/youtube.png" alt="Youtube">
                         </a>
                     </li>
                     <li class="navegacion">
-                        <a class="link" href="https://es-la.facebook.com/TinitaStoesel/">
-                        <img class="socialMedia" src="../images/facebook.png" alt="Facebook">
+                        <a class="enlace" href="https://es-la.facebook.com/TinitaStoesel/">
+                        <img class="socialMedia" src="../assets/images/facebook.png" alt="Facebook">
                         </a>
                     </li>
                     <li class="navegacion">
-                        <a class="link" href="https://twitter.com/tinistoessel">
-                        <img class="socialMedia" src="../images/twitter.png" alt="Twitter">
+                        <a class="enlace" href="https://twitter.com/tinistoessel">
+                        <img class="socialMedia" src="../assets/images/twitter.png" alt="Twitter">
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
