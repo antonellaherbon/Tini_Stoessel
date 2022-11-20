@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-.alinearHeader{
-    display: flex;
-    justify-content: space-between
-    
-}
-
 .logo {
     margin-top: 10px;
     width: 150px;
@@ -49,10 +43,6 @@
     transform-origin: bottom left;
 }
 
-.titulo {
-    margin-left: 300px;
-}
-
 
 .enlace:hover {
     color: rgb(110, 110, 110)
@@ -61,12 +51,6 @@
 .socialMedia {
     height: 25px;
     width: 25px;
-}
-
-
-.header{
-    background-color: rgb(5, 5, 57);
-    width: 100%;
 }
 
 .footer {
@@ -84,11 +68,6 @@
 .colorFooter{
     color: white;
     text-align: center;
-}
-
-.cajaInfo {
-    height: 100%;
-    padding-top: 100px ;
 }
 
 .tituloInformacion {
@@ -119,16 +98,6 @@
     font-style: italic;
 }
 
- .contenedorCards{
-    width: 100%;
-    max-width: 1200px;
-    height: 430px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-}
-
 .card{
     width: 330px;
     height: 430px;
@@ -150,16 +119,10 @@
     height: 300px;
 }
 
-
 .card h2{
     font-weight: 600;
     color: white;
 }
-
-.parrOpinionesCard{
-    color: white;
-}
-
 
 .card p{
     padding: 10px 1rem;
@@ -173,15 +136,17 @@
 
 .discografia{
     text-align: center;
-    margin-top: 15px;
+    margin-top: 8rem;
 }
 
-.contenedorSpotify{
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
+.discografiaSubtitulo{
     text-align: center;
-    margin-top: 15px;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.contenedorDiscografia{
+    margin-bottom: 2%;
 }
 
 .spotify{
@@ -194,25 +159,22 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-top: 10rem;
-    /* margin-top: 20%; */
 }
 
-.contenedorMapas{
-    width: 100%;
-    max-width: 1200px;
-    height: 462px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-}
 .videoTour{
     text-align: center;
 }
 
-.textoTour{
-    margin-top: 30px;
+.tituloTour{
+    margin-top: 10%;
+    text-align: center;
 }
+
+.subtituloTour{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 .mapa{
     width: 330px;
     height: 430px;
@@ -228,65 +190,28 @@
 .graficoMapa{
     height: 300px;
     width: 370px;
-    padding-top: 50px;
+    padding-top: 47px;
 }
 
 .texto{
     color: white;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10%;
 }
 
 .boton{
-    margin-top: 50px;
+    margin-top: 5%;
     cursor: pointer;
 }
 
-.contenedorContacto{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.contactoFormulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.formularioInput{
-    display: block;
-    padding: .5rem 2rem;
-    border-radius: 5px;
-    border: 0;
-    outline: solid 2px rgb(82, 112, 157);
-    width:100%
-}
-
-
-.formularioInput:focus{
-    outline: solid 2px rgb(82, 112, 157);
-}
-
-.formularioInput:focus + .formularioTexto{
-    transform: translateY(-1.2rem);
-    transition: .5s;
-    font-size: 13px;
-    color: rgb(82, 112, 157);    
-}
-
-
-
 .parrafoContacto{
+    margin-top: 13%;
     color: black;
     width: 50%;
-    margin-left: 360px;
+    margin-left: 25%;
     text-align: center;
     border-radius: 3px;
     border: solid 1px rgb(82, 112, 157);
-    margin-top: 50px;
     transform: width 2s, height 2s;
     transition: transform 2s;
 }
@@ -298,42 +223,13 @@
 .imagenContacto{
     margin-top: 30px;
     margin-bottom: 30px;
+    width: 100%;
 }
 
-.formularioTexto{
-    transition: all .5s;
-    position: absolute;
-    top: 25px;
-    left: 2rem;
-    background-color: white;
-    color: rgb(82, 112, 157);
+.alinearCheckbox{
+    margin-left: 3%;
 }
 
-
-.formularioCaja{
-    position: relative;
-    margin-top: 10px;
-    padding: 1rem;
-    width: 500px;
-}
-
-
-
-.formularioInput:not(:placeholder-shown) + .formularioTexto{
-    background: none;
-    transform: translateY(-1.2rem);
-}
-
-
-.botonContacto{
-    background-color: rgb(82, 112, 157);
-    color: white;
-    border-radius: 3px;
-    border: solid 1px rgb(5, 5, 57);
-    padding: 5px 30px;
-    cursor: pointer;
-    margin-top: 15px;
-}
 
 .navbar-style{
     background-color: rgb(5, 5, 57);
@@ -346,4 +242,42 @@
 .nav-item{
     display: flex;
     justify-content: flex-end;
+}
+
+.decoracionInput{
+    border-color: rgb(82, 112, 157);
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .parrafoContacto{
+        margin-top: 35%;
+        margin-left:21%;
+        
+    }
+
+    .parrafoContacto:hover{
+        transform: scale(1);
+    }
+}  
+
+@media (min-width: 481px) and (max-width: 768px){
+    .parrafoContacto{
+        margin-top: 29%;
+        margin-left: 27%;
+    }
+
+    .parrafoContacto:hover{
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .parrafoContacto{
+        margin-top: 20%;
+        margin-left: 34%;
+    }
+
+    .parrafoContacto:hover{
+        transform: scale(1);
+    }
 }

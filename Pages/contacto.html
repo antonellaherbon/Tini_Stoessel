@@ -4,51 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <title>TINI - Contacto</title>
 </head>
 <body>
-    <header class="header">
-        <div class="alinearHeader">
-            <img class = "logo" src="../assets/images/logoTini.png" alt="">
-            <nav class="navbar">
-                <ul>
-                    <li class="navegacion"><a class="link" href="../index.html">Home</a></li>
-                    <li class="navegacion"><a class="link" href="opiniones.html">Opiniones</a></li>
-                    <li class="navegacion"><a class="link" href="discografia.html">Discografia</a></li>
-                    <li class="navegacion"><a class="link" href="tour.html">Tour</a></li>
-                    <li class="navegacion"><a class="link" href="#">Contacto</a></li>
-                </ul>
-            </nav>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top navbar-style"> 
+        <div class="container-fluid">
+        <img class ="logo" src="../assets/images/logoTini.png" alt="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end w-100">
+            <li class="nav-item ">
+                <a class="nav-link enlace" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link enlace" href="./opiniones.html">Opiniones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link enlace" href="./discografia.html">Discografia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link enlace" href="./tour.html">Tour</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active enlace" href="#">Contacto</a>
+            </li>
+            </ul>
         </div>
-    </header>
+    </nav> 
     <main>
-        <p class="parrafoContacto">
-            Si tenes alguna opinión sobre esta pagina no dudes en mandar un mensaje! Las criticas constructivas siempre son recibidas. Tampoco dudes en suscribirte si deseas ser notificado cuando actualicemos información sobre Tini.
-        </p>
-        <div class="contenedorContacto">          
-            <div class="contactoFormulario">
-                <form class="formulario">
-                    <div class="formularioCaja">
-                        <input class="formularioInput" type="text" id="textUser" placeholder=" " required>
-                        <label for="textUser" class="formularioTexto">Nombre</label>
+        <div class="container-fluid">
+            <div class="container"> 
+                <div class="row">
+                    <p class="parrafoContacto">
+                        Si tenes alguna opinión sobre esta pagina no dudes en mandar un mensaje! Las criticas constructivas siempre son recibidas. Tampoco dudes en suscribirte si deseas ser notificado cuando actualicemos información sobre Tini.
+                    </p>
+                </div>
+                <div class="container">
+    
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 row vh-95 justify-content-center align-items-center">
+                            <form>
+                                <div class="form-group my-3">
+                                    <label for="exampleFormControlInput1">Nombre y Apellido</label>
+                                    <input type="text" class="form-control my-2 decoracionInput" id="exampleFormControlInput1" placeholder="Nombre Apellido" required>
+                                </div>
+                                <div class="form-group my-3">
+                                    <label for="exampleFormControlInput1">E-Mail</label>
+                                    <input type="email" class="form-control my-2 decoracionInput" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                                </div>
+                                <div class="form-group my-3">
+                                    <label for="exampleFormControlTextarea1">Mensaje</label>
+                                    <textarea class="form-control my-2 decoracionInput" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">Deseo suscribirme y recibir E-Mails</label>
+                                </div>
+                                <div class="m-0 text-center align-items-center justify-content-center">
+                                    <input class="btn my-3 btn-primary" type="submit" value="Enviar">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <img class ="imagenContacto" src="../assets/images/tiniContacto.png" alt="">
+                        </div>
                     </div>
-                    <div class="formularioCaja">
-                        <input class="formularioInput" type="text" id="textUser" placeholder=" " required>
-                        <label for="textUser" class="formularioTexto">E-Mail</label>
-                    </div>               
-                    <div class="formularioCaja">
-                        <textarea class="formularioInput" name="Mensaje" id="textUser"  rows="5"></textarea>
-                        <label for="textUser" class="formularioTexto">Mensaje</label>
-                    </div>     
-                    <section>
-                        <input type="checkbox">
-                        <label>Deseo suscribirme y recibir E-Mails</label>
-                    </section>
-                    <input class ="botonContacto" type="submit" value="ENVIAR">
-                </form>
+                </div>
             </div>
-            <img class ="imagenContacto" src="../assets/images/tiniContacto.png" alt="">
         </div>
     </main>
     <footer class="footer">  
@@ -81,6 +107,6 @@
             </div>
         </div>
     </footer>
-    
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

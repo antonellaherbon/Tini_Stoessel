@@ -4,36 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <title>TINI - Discografia </title>
 </head>
 <body>
-    <header class="header">
-        <div class="alinearHeader">
-
-            <img class ="logo" src="../assets/images/logoTini.png" alt="">
-            <nav class="navbar">
-                <ul>
-                    <li class="navegacion"><a class="link" href="../index.html">Home</a></li>
-                    <li class="navegacion"><a class="link" href="opiniones.html">Opiniones</a></li>
-                    <li class="navegacion"><a class="link" href="#">Discografia</a></li>
-                    <li class="navegacion"><a class="link" href="tour.html">Tour</a></li>
-                    <li class="navegacion"><a class="link" href="contacto.html">Contacto</a></li>
-                </ul>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top navbar-style"> 
+        <div class="container-fluid">
+        <img class ="logo" src="../assets/images/logoTini.png" alt="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end w-100">
+            <li class="nav-item ">
+                <a class="nav-link enlace" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link enlace" href="./opiniones.html">Opiniones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active enlace" href="#">Discografia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link enlace" href="./tour.html">Tour</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link enlace" href="./contacto.html">Contacto</a>
+            </li>
+            </ul>
         </div>
-    </header>
-    <main class="banner2">
-        <h1 class="discografia">DISCOGRAFIA</h1>
-        <h2>Conocé los albumes de la estrella del momento!</h2>
-        <div class="contenedorSpotify">
-            <div class="spotify">
-                <iframe  style="border-radius:12px" src="https://open.spotify.com/embed/album/2pFtQ4nD1Dq1ESF4w7wk3Q?utm_source=generator&theme=0" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </nav> 
+        
+    <main>
+        <div class="container contenedorDiscografia">
+            <div class="row">
+                <h1 class="discografia">DISCOGRAFIA</h1>
             </div>
-            <div class="spotify">
-                <iframe  style="border-radius:12px" src="https://open.spotify.com/embed/album/2RuYsBRCgFEantZkX83W2Y?utm_source=generator&theme=0" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="row">
+                <h2 class="discografiaSubtitulo">Conocé los albumes de la estrella del momento!</h2>
             </div>
-            <div class="spotify">
-                <iframe  style="border-radius:12px" src="https://open.spotify.com/embed/album/16TT0OKoyEgD22nj70WUEi?utm_source=generator" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="spotify">
+                        <iframe  style="border-radius:12px" src="https://open.spotify.com/embed/album/2pFtQ4nD1Dq1ESF4w7wk3Q?utm_source=generator&theme=0" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="spotify">
+                        <iframe  style="border-radius:12px" src="https://open.spotify.com/embed/album/2RuYsBRCgFEantZkX83W2Y?utm_source=generator&theme=0" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="spotify">
+                        <iframe  style="border-radius:12px" src="https://open.spotify.com/embed/album/16TT0OKoyEgD22nj70WUEi?utm_source=generator" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -65,5 +91,6 @@
             </ul>
         </div>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
