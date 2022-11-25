@@ -1,0 +1,34 @@
+.tituloTour{
+    margin-top: 10%;
+    text-align: $centrado;
+}
+.videoTour{
+    text-align: $centrado;
+}
+
+.subtituloTour{
+    text-align: $centrado;
+    font-size: 1.5rem;
+}
+
+.mapa{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: $centrado;
+    transition: all 0.25s;
+    background-color: rgb(82, 112, 157);
+    .texto{
+        color: black;
+        text-align: $centrado;
+        margin-top: 10%;
+    }
+    .graficoMapa{
+        height: 70%;
+        width: 370px;
+        padding-top: 40px;
+    }
+}

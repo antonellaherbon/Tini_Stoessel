@@ -1,0 +1,17 @@
+.contenedorDiscografia{
+    margin-bottom: 2%;
+    .discografia{
+        text-align: $centrado;
+        margin-top: 8rem;
+    }
+    .discografiaSubtitulo{
+        text-align: $centrado;
+        font-size: 1.5rem;
+        font-style: $estilo_letra;
+    }
+}
+
+.spotify{
+    margin-top: 20px;
+    margin-left: 80px;
+}

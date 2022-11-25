@@ -1,0 +1,28 @@
+.card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: $centrado;
+    background-color: rgb(82, 112, 157);
+    transform: width 2s, height 2s;
+    transition: transform 2s;
+    &:hover{
+        transform: scale(1.1);
+    }
+    img {
+        width: 100%;
+        height: 300px;
+    }
+    h2{
+        font-weight: 600;
+        color: white;
+    }
+    p{
+        padding: 10px 1rem;
+        font-size: 16px;
+        font-weight: 300;
+    } 
+}

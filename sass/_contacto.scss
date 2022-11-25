@@ -1,0 +1,28 @@
+.parrafoContacto{
+    margin-top: 13%;
+    color: black;
+    width: 50%;
+    margin-left: 25%;
+    text-align: $centrado;
+    border-radius: 3px;
+    border: solid 1px rgb(82, 112, 157);
+    transform: width 2s, height 2s;
+    transition: transform 2s;
+    &:hover{
+        transform: scale(1.7);
+    }
+}
+
+.imagenContacto{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.alinearCheckbox{
+    margin-left: 3%;
+}
+
+.decoracionInput{
+    border-color: rgb(82, 112, 157);
+}

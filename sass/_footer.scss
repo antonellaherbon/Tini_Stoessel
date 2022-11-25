@@ -1,0 +1,25 @@
+.footer{
+    display:flex;
+    flex-direction: column;
+    text-align: $centrado;
+    width: 100%;
+    background-color: rgb(5, 5, 57);
+    .colorFooter{
+        color: white;
+        text-align: $centrado;
+    }
+    .redes {
+        text-align: $centrado;
+        .navegacion {
+            display:inline-block;
+            padding:10px 15px;
+            text-align:$centrado;
+            color:#fff;
+        }
+    }
+}
+
+.socialMedia {
+    height: 25px;
+    width: 25px;
+}
