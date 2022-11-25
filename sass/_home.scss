@@ -8,7 +8,7 @@
 
 .informacion {
     text-align: $centrado;
-    width: 90%;
+    width: $ancho - 10;
     margin-top: 3%;
     font-size: 1.3rem;
     font-family: $tipografia;
@@ -22,7 +22,7 @@
 
 .informacion2{
     text-align: $centrado;
-    width: 90%;
+    width: $ancho - 10;
     font-size: 1.3rem;
     font-family: $tipografia;
     font-style: $estilo_letra;

@@ -1,8 +1,8 @@
 .footer{
-    display:flex;
+    @include display (flex);
     flex-direction: column;
     text-align: $centrado;
-    width: 100%;
+    @include ancho;
     background-color: rgb(5, 5, 57);
     .colorFooter{
         color: white;
@@ -11,7 +11,7 @@
     .redes {
         text-align: $centrado;
         .navegacion {
-            display:inline-block;
+            @include display (inline-block);
             padding:10px 15px;
             text-align:$centrado;
             color:#fff;

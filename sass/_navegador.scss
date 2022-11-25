@@ -3,6 +3,6 @@
 }
 
 .nav-item{
-    display: flex;
+    @include display (flex);
     justify-content: flex-end;
 }

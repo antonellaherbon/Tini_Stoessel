@@ -1,7 +1,7 @@
 .parrafoContacto{
     margin-top: 13%;
     color: black;
-    width: 50%;
+    width: $ancho - 50;
     margin-left: 25%;
     text-align: $centrado;
     border-radius: 3px;
@@ -16,7 +16,7 @@
 .imagenContacto{
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 100%;
+    @include ancho;
 }
 
 .alinearCheckbox{
