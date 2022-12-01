@@ -5,9 +5,9 @@
 
 .footer {
   display: flex;
+  width: 100%;
   flex-direction: column;
   text-align: center;
-  width: 100%;
   background-color: #050539; }
   .footer .colorFooter {
     color: white;
@@ -71,9 +71,9 @@
     font-weight: 300; }
 
 .botonContacto {
+  position: relative;
   height: 40px;
   margin: 0 45px;
-  position: relative;
   padding: 5px 25px;
   font-size: 20px;
   border: none;
@@ -125,8 +125,9 @@
   font-style: italic; }
 
 .imagenIndex {
-  height: 70%;
-  margin-top: 27%; }
+  margin-top: 27%;
+  object-fit: cover;
+  margin-bottom: 1%; }
 
 .informacion2 {
   text-align: center;
@@ -156,7 +157,7 @@
 
 .mapa {
   width: 330px;
-  height: 430px;
+  height: 480px;
   border-radius: 8px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -174,7 +175,8 @@
     padding-top: 40px; }
 
 .contenedorDiscografia {
-  margin-bottom: 2%; }
+  margin-bottom: 2%;
+  overflow: hidden; }
   .contenedorDiscografia .discografia {
     text-align: center;
     margin-top: 8rem; }
@@ -223,14 +225,21 @@
     margin-top: 35%;
     margin-left: 21%; }
     .parrafoContacto:hover {
-      transform: scale(1); } }
+      transform: scale(1); }
+  .imagenIndex {
+    width: 100%;
+    margin-top: 5%; }
+  .tituloInformacion {
+    margin-top: 36%; } }
 
 @media (min-width: 481px) and (max-width: 768px) {
   .parrafoContacto {
     margin-top: 29%;
     margin-left: 27%; }
     .parrafoContacto:hover {
-      transform: scale(1); } }
+      transform: scale(1); }
+  .tituloTour {
+    margin-top: 23%; } }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .parrafoContacto {

@@ -12,12 +12,15 @@
 }
 
 .mapa{
+    width: 330px;
+    height: 480px;
     border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px map-get($colores,color8);
     overflow: $overflow;
+    margin: 20px;
     text-align: $centrado;
     transition: all 0.25s;
-    background-color: rgb(82, 112, 157);
+    background-color:map-get($colores,color9);
     .texto{
         color: black;
         text-align: $centrado;

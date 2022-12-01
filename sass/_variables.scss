@@ -4,3 +4,22 @@ $tipografia: Arial, Helvetica, sans-serif;
 $transformacion: scale(1);
 $ancho: 100%;
 $overflow: hidden;
+$display: (
+    display-in-line: inline-block,
+    display-flex: flex,
+);
+
+$colores: (
+    color1: black,
+    color2: white,
+    color3: rgb(62, 58, 58),
+    color4: rgba(193, 193, 186, 0.999),
+    color5: rgba(0,0,0,.7),
+    color6: rgba(222, 222, 222, 0.422),
+    color7: whitesmoke,
+    color8: rgba(0, 0, 0, 0.2),
+    color9:  rgb(82, 112, 157),
+    color10: rgb(110, 110, 110),
+    color11: rgb(5, 5, 57),
+
+);

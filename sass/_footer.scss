@@ -1,20 +1,20 @@
 .footer{
-    @include display (flex);
+    display: flex;
+    width: 100%;
     flex-direction: column;
     text-align: $centrado;
-    @include ancho;
-    background-color: rgb(5, 5, 57);
+    background-color:map-get($colores,color11);
     .colorFooter{
-        color: white;
+        color: map-get($colores,color2);
         text-align: $centrado;
     }
     .redes {
         text-align: $centrado;
         .navegacion {
-            @include display (inline-block);
+            display: map-get($display, display-in-line);
             padding:10px 15px;
             text-align:$centrado;
-            color:#fff;
+            color:map-get($colores,color2);
         }
     }
 }

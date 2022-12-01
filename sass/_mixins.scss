@@ -1,21 +1,3 @@
-@mixin iniciales {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-@mixin ancho {
-    width: $ancho;
-}
-
-@mixin position($posicion){
-    position: $posicion;
-}
-
-@mixin display($display){
-    position: $display;
-}
-
-@mixin color($color){
-    color: $color;
+@mixin position($position){
+    position: $position;
 }

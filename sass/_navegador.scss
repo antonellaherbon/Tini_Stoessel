@@ -1,8 +1,8 @@
 .navbar-style{
-    background-color: rgb(5, 5, 57);
+    background-color:map-get($colores,color11);
 }
 
 .nav-item{
-    @include display (flex);
+    display: map-get($display, display-flex);
     justify-content: flex-end;
 }

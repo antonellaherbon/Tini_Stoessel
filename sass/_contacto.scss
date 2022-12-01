@@ -5,7 +5,7 @@
     margin-left: 25%;
     text-align: $centrado;
     border-radius: 3px;
-    border: solid 1px rgb(82, 112, 157);
+    border: solid 1px map-get($colores,color9);
     transform: width 2s, height 2s;
     transition: transform 2s;
     &:hover{
@@ -16,7 +16,7 @@
 .imagenContacto{
     margin-top: 30px;
     margin-bottom: 30px;
-    @include ancho;
+    width: 100%;
 }
 
 .alinearCheckbox{
@@ -24,5 +24,5 @@
 }
 
 .decoracionInput{
-    border-color: rgb(82, 112, 157);
+    border-color: map-get($colores,color9);
 }
