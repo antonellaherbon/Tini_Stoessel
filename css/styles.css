@@ -190,7 +190,7 @@
   margin-left: 80px; }
 
 .parrafoContacto {
-  margin-top: 13%;
+  margin-top: 2%;
   color: black;
   width: 50%;
   margin-left: 25%;
@@ -201,6 +201,11 @@
   transition: transform 2s; }
   .parrafoContacto:hover {
     transform: scale(1.7); }
+
+.tituloContacto {
+  margin-top: 150px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif; }
 
 .imagenContacto {
   margin-top: 30px;
